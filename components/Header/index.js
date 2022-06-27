@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import React, {useState} from 'react'
 
@@ -19,12 +20,13 @@ function Header() {
     })
   }
 
-  console.log(menuIsOpen);
 
   return (
-    <header className="relative bg-black">
+    <header className="relative">
     <nav className="container relative z-40 flex items-center justify-between py-4 px-4 sm:px-0">
-      <div>GLOW</div>
+      <div className='relative w-36 h-14'>
+        <Image className="block object-contain" src="/glow.png" alt="" layout='fill'/>
+      </div>
 
       <ol className={`${menuIsOpen ? "nav--menu-links active-nav-links" : "nav--menu-links"}`}>
         <div className="flex w-full justify-end py-4 sm:hidden">
@@ -70,7 +72,7 @@ function Header() {
       </button>
     </nav>
 
-    <section className="container relative z-30 flex h-[80vh] flex-col items-center justify-center space-y-4 px-4 py-24 sm:px-0">
+    <section className="container relative z-30 flex flex-col items-center justify-center space-y-4 px-4 py-32 sm:px-0">
       <h1 className="mx-auto mb-5 text-center text-2xl font-medium sm:text-4xl md:w-4/5">Spacious studios for your photography and film needs</h1>
 
       <p className="mx-auto text-center md:w-4/5">For Hire, book your sessions now</p>
@@ -84,9 +86,10 @@ function Header() {
     </section>
 
     <div className="absolute inset-0 z-0 block">
-      <img className="relative h-full w-full object-cover" src="https://tesla-cdn.thron.com/delivery/public/image/tesla/93b81b8b-7c57-4065-9568-3755ce6c32d8/bvlatuR/std/1920x1080/_1D-Utility-B" alt="  dfsdfsd" />
+      <img className="relative h-full w-full object-cover" src="/studio.jpg" alt="  dfsdfsd" />
     </div>
-    <div className="absolute inset-0 bg-black bg-opacity-75"></div>
+
+    <div className="absolute inset-0 bg-black bg-opacity-30"></div>
   </header>
   )
 }
