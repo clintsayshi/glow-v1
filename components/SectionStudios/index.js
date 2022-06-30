@@ -3,61 +3,68 @@ import React from 'react'
 
 function StudioSection() {
   return (
-    <section className='py-32'>
-        <div className='container px-4 sm:px-0 py-10 flex flex-col sm:flex-row justify-between items-center space-y-6 sm:space-y-0 sm:space-x-10 md:space-x-20'>
-            <div className='relative w-full sm:flex-1'>
-                <div className='relative aspect-square lg:w-4/5'>
-                    <Image className='object-cover rounded-full' src="/studioInt.jpeg" alt="another studio" layout='fill'/>
-                </div>
-            </div>
+    <section className='py-20'>
+    <header className='container px-4 sm:px-0'>
+        <h2 className='text-3xl font-medium lg:w-1/2 xl:w-1/3'>Hire Film and Photography Studios</h2>
+    </header>
 
-            <div className='flex-1 space-y-5'>
-                <h3 className=' text-3xl text-center sm:text-left font-medium'>Studio One</h3>
-                
-                <div>
-                    <p className=' text-center sm:text-left'>
-                        Lorem ipsum dolor sit amet. Vel quisquam sint ut dolores enim et unde internos. Ut officia molestiae ut excepturi optio in nesciunt laboriosam? Ad molestias vero qui velit quas 33 repellendus dolor qui cumque sint nam voluptas inventore est obcaecati atque sed quasi modi.
-                    </p>
-                </div>
-            </div>
-        </div>
+    <div className='container flex flex-col-reverse  justify-between px-4 py-10 gap-10 sm:px-0 sm:flex-row sm:space-y-0 sm:space-x-10 md:space-x-20'>
+        <div className='relative w-full sm:flex-1'>
 
-        <div className='container px-4 sm:px-0 py-10 flex flex-col-reverse sm:flex-row justify-between items-center space-y-0 sm:space-y-0 sm:space-x-10 md:space-x-20'>
-            <div className='block flex-1 space-y-5'>
-                <h3 className=' text-3xl text-center sm:text-left font-medium'>Studio Two</h3>
-                
-                <div>
-                    <p className=' text-center sm:text-left'>
-                        Lorem ipsum dolor sit amet. Vel quisquam sint ut dolores enim et unde internos. Ut officia molestiae ut excepturi optio in nesciunt laboriosam? Ad molestias vero qui velit quas 33 repellendus dolor qui cumque sint nam voluptas inventore est obcaecati atque sed quasi modi.
-                    </p>
-                </div>
+            <div className='relative aspect-square lg:w-4/5'>
+                <Image className='object-cover' src="/studioInt.jpeg" alt="another studio" layout='fill'/>
             </div>
             
-            <div className='relative w-full sm:flex-1'>
-                <div className='relative aspect-square  sm:ml-auto lg:w-4/5'>
-                    <Image className='object-cover rounded-full' src="/studioInt.jpeg" alt="another studio" layout='fill'/>
+            <div className='lg:w-4/5 flex justify-between'>
+                <div className=''>
+                    <h3 className='text-2xl'>Studio One</h3>
+                    <address>
+                        70C Oxford Road<br/>
+                        Riviera, JHB
+                    </address>
                 </div>
+
+                <a className='text-base underline' href=''>Learn more</a>
             </div>
+            
         </div>
 
-        <div className='container px-4 py-10 flex flex-col sm:flex-row justify-between items-center space-y-6 sm:space-y-0 sm:space-x-10 md:space-x-20'>
-            <div className='relative w-full sm:flex-1'>
-                <div className='relative aspect-square lg:w-4/5'>
-                    <Image className='object-cover rounded-full' src="/studioInt.jpeg" alt="another studio" layout='fill'/>
-                </div>
-            </div>
-
-            <div className='flex-1 space-y-5'>
-                <h3 className=' text-3xl text-center sm:text-left font-medium'>Gear</h3>
-                
-                <div>
-                    <p className=' text-center sm:text-left'>
-                        Lorem ipsum dolor sit amet. Vel quisquam sint ut dolores enim et unde internos. Ut officia molestiae ut excepturi optio in nesciunt laboriosam? Ad molestias vero qui velit quas 33 repellendus dolor qui cumque sint nam voluptas inventore est obcaecati atque sed quasi modi.
-                    </p>
-                </div>
-            </div>
+        <div className='flex-1 space-y-5'>
+            <h3 className='text-2xl text-left'>
+                Our contemporary Studios in Johannesburg and Cape Town offer a space that caters for fashion shoots, food, lifestyle and film with plenty of space for a large team.
+            </h3>
         </div>
-    </section>
+    </div>
+
+    
+    <div className='container flex flex-col  justify-between px-4 py-10 gap-10 sm:px-0 sm:flex-row sm:space-y-0 sm:space-x-10 md:space-x-20'>
+        <div className='flex-1 space-y-5'>
+            <h3 className='text-2xl text-left'>
+            Designed and built by photographers and are fully functional to all standards, and is no doubt the best of all studios on offer
+            </h3>
+        </div>
+        
+        <div className='relative w-full sm:flex-1 ml-auto'>
+
+            <div className='relative aspect-square lg:ml-auto lg:w-4/5'>
+                <Image className='object-cover' src="/studioInt.jpeg" alt="another studio" layout='fill'/>
+            </div>
+            
+            <div className='lg:w-4/5 flex justify-between lg:ml-auto'>
+                <div className=''>
+                    <h3 className='text-2xl'>Studio One</h3>
+                    <address>
+                        70C Oxford Road<br/>
+                        Riviera, JHB
+                    </address>
+                </div>
+
+                <a className='text-base underline' href=''>Learn more</a>
+            </div>
+            
+        </div>
+    </div>
+</section>
   )
 }
 
