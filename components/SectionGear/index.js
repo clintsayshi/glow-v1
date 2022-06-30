@@ -37,8 +37,8 @@ function Gear() {
 
             <div className="py-10 gap-4 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4">
                 {
-                    Gear.map(({name, Icon})=>(
-                        <article className='py-2 space-y-2'>
+                    Gear.map(({name, Icon}, key)=>(
+                        <article key={key} className='py-2 space-y-2'>
                             <Icon />
                             <h4>{name}</h4>
                         </article>
