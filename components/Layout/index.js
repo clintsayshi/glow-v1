@@ -4,7 +4,7 @@ import Header from '../Header'
 
 function Index({children}) {
   return (
-    <div className="relative flex h-full w-full flex-col justify-between">
+    <div className="relative flex h-full w-full flex-col justify-between scroll-smooth">
         <Header />
 
         <main>

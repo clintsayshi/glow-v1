@@ -1,18 +1,14 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
 function Hero() {
   return (
-    <section className="container relative z-30 flex flex-col items-center justify-center space-y-4 px-4 py-32 sm:px-0">
-      <h1 className="mx-auto mb-5 text-center text-2xl font-medium sm:text-4xl md:w-4/5">Spacious studios for your photography and film needs</h1>
+    <section className="container relative z-30 flex flex-col items-center justify-center space-y-8 px-4 py-20 sm:px-0">
+      <h1 className="mx-auto text-center text-2xl font-medium sm:text-4xl md:w-3/4 lg:w-1/2">Spacious studios for your photography and film needs</h1>
 
-      <p className="mx-auto text-center md:w-4/5">For Hire, book your sessions now</p>
-
-      <div className="flex items-center justify-center space-x-2">
-        <Link href="/"><a className="inline-block border bg-blue-600 px-4 py-1">Book</a></Link>
-        <Link href="/">
-        <a className="inline-block border px-4 py-1">Learn more</a>
-        </Link>
+      <div className="relative w-full h-72 sm:h-80 lg:h-96 lg:w-4/5">
+        <Image className='obejct-cover' src="/hero-bg.jpeg" alt="glow's oxford studio in Johannesburg" layout='fill'/>
       </div>
     </section>
   )
